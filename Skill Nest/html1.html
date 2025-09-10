@@ -11,7 +11,125 @@
     </header>
     <hr>
     <main>
-        
+        <p>HTML stands for HyperText Markup Language. It is the standard language used to create and structure the content of a webpage.</p>
+        <ul>
+            <li>HyperText: This refers to the ability to create links that connect web pages to one another, making the web a connected "web" of information.</li>
+            <li>Markup Language: This means you use "tags" to surround your content, giving that content meaning and structure. You are "marking up" a plain text document.</li>
+        </ul>
+        <p>First Website:</p>
+        <a href="https://info.cern.ch/hypertext/WWW/TheProject.html">World Wide Web</a>
+        <p>Install Required Software:</p>
+        <ul>
+            <li>Install Visual Studio Code
+                <p>This is a free piece of software from Microsoft that you will use to write your code.</p>
+                <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>
+            </li>
+            <li>Install Visual Studio Code Extensions
+                <br><br>
+                <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server">Live Preview</a>
+                <br>
+                <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier</a>
+                <br>
+                <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a>
+            </li>
+        </ul>
+        <hr>
+        <h2>HTML Tags</h2>
+        <ol>
+            <li><h3>The Heading <span style="color: blueviolet;">(&lt;h1&gt; to &lt;h6&gt;)</span></h3>
+                <p>What it is: Headings are tags used to define titles and subtitles on your page. They are crucial for creating a logical hierarchy and outline for your content.</p>
+                <pre style="background-color: lightgray; padding: 10px; border-radius: 5px;">
+                    <code>
+                        &lt;h1&gt;Heading 1&lt;/h1&gt;
+                        &lt;h2&gt;Heading 2&lt;/h2&gt;
+                        &lt;h3&gt;Heading 3&lt;/h3&gt;
+                        &lt;h4&gt;Heading 4&lt;/h4&gt;
+                        &lt;h5&gt;Heading 5&lt;/h5&gt;
+                        &lt;h6&gt;Heading 6&lt;/h6&gt;
+                    </code>
+                </pre>
+                <ul>
+                    <li>h1: The most important heading, typically used only once per page for the main title.</li>
+                    <li>h2: A major section heading.</li>
+                    <li>h3: A sub-section heading under an h2.</li>
+                    <li>...and so on, down to h6, the least important heading.</li>
+                </ul>
+            </li>
+            
+            <li><h3>The Paragraph <span style="color: blueviolet;">(&gt;p&lt;)</span></h3>
+                <p>What it is: The paragraph tag is the most common tag you'll use. It's for grouping sentences and blocks of text together.</p>
+                <p>The Tag: <span style="color: blueviolet;">(&gt;p&lt;)</span></p>
+                <p>The Purpose: To define a distinct paragraph of text. Browsers automatically add a little bit of space before and after a (&gt;p&lt;) element, separating it from other content. You should not use multiple line breaks; you should use multiple (&gt;p&lt;) tags.</p>
+                <pre style="background-color: lightgray; padding: 10px; border-radius: 5px;">
+                    <code>
+                        &lt;p&gt;This is the first paragraph. It contains several sentences about a topic.&lt;/p&gt;
+                        &lt;p&gt;This is a second, separate paragraph. The browser will display it with a space between it and the first one.&lt;/p&gt;
+                    </code>
+                </pre>
+            </li>
+            
+            <li><h3>HTML Horizontal Rules</h3>
+                <p>The &lt;hr&gt; tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.</p>
+                <p>The &lt;hr&gt; element is used to separate content (or define a change) in an HTML page:</p>
+                <pre style="background-color: lightgray; padding: 10px; border-radius: 5px;">
+                    <code>
+                        &lt;p&gt;This is the first topic.&lt;/p&gt;
+                        &lt;hr&gt;
+                        &lt;p&gt;This is a completely different topic.&lt;/p&gt;
+                    </code>
+                </pre>
+            </li>
+            
+            <li><h3> The Line Break Tag: <span style="color: blueviolet;">&lt;br&gt;</span></h3>
+                <p>This tag tells the browser, "Stop writing on this line and immediately start on the next one." It's like hitting the Enter key once in a poem or an address.</p>
+                <ul>
+                    <li>Purpose: Creates a single line break.</li>
+                    <li>Example: codeHtml</li>
+                    <li>
+                        <pre style="background-color: lightgray; padding: 10px; border-radius: 5px;">
+                            <code>
+                                &lt;p&gt;221B Baker Street&lt;br&gt;
+                                London, England&lt;/p&gt;
+                            </code>
+                        </pre>
+                    </li>
+                </ul>
+            </li>
+            
+            <li><h3>List Elements <span style="color: blueviolet;">(&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;)</span></h3>
+                <p>What it is: These tags are used to create lists. This is a perfect example of nesting.</p>
+                <p>The Tags:</p>
+                <ul>
+                    <li>&lt;ul&gt;: An Unordered List. It creates a bulleted list.</li>
+                    <li>&lt;ol&gt;: An Ordered List. It creates a numbered list.</li>
+                    <li>&lt;li&gt;: A List Item. Each item in either type of list must be wrapped in an &lt;li&gt; tag.</li>
+                </ul>
+                <p>The Purpose: To group related items together in a list format.</p>
+                <p>Example (Nesting in action):</p>
+                <p>The &lt;li&gt; elements are nested as children inside the &lt;ul&gt; parent.</p>
+                <pre>
+                    <code>
+                        &lt;ul&gt;
+                            &lt;li&gt;Tea Bag&lt;/li&gt;
+                            &lt;li&gt;Water&lt;/li&gt;
+                            &lt;li&gt;Sugar&lt;/li&gt;
+                            &lt;li&gt;Milk&lt;/li&gt;
+                        &lt;/ul&gt;
+
+                        &lt;ol&gt;
+                            &lt;li&gt;First, boil the water in a kettle.&lt;/li&gt;
+                            &lt;li&gt;Add tea bag, sugar and milk into it.&lt;/li&gt;
+                            &lt;li&gt;Keep boiling it for 5 minutes.&lt;/li&gt;
+                            &lt;li&gt;Serve the tea by pouring it into cup.&lt;/li&gt;
+                        &lt;/ol&gt;
+                    </code>
+                </pre>
+            </li>
+            
+            <li></li>
+            
+            <li></li>
+        </ol>
     </main>
 </body>
 </html>
