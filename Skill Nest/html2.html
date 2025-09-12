@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(105, 125, 145, 0.5);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -64,7 +69,7 @@
         <img src="e.jpg" alt="image">
         <h3>The Critical "Why": Why not use absolute paths for your own files?</h3>
         <p>A beginner might be tempted to copy the full path from their computer, like this:</p>
-        <p><span style="color: rgb(253, 0, 0);">src="C:/Users/Arjun/Desktop/my-website/images/logo.png"</span></p>
+        <p><span style="color: rgb(0, 89, 255);">src="C:/Users/Arjun/Desktop/my-website/images/logo.png"</span></p>
         <p>This is a major mistake. This address only works on your computer. The moment you upload your website to a real web server, that path becomes meaningless and the image will be broken.</p>
         <p>Think of a web browser (like Chrome, Firefox, etc.) as a secure prison for the code it runs. This prison is called a "sandbox."</p>
         <ul>
@@ -243,7 +248,7 @@
         <h4>The Core Problem: How to Handle "Bad" HTML?</h4>
         <p>A browser's job is to display something, no matter what you give it. When you give it a file without a boilerplate, here's what happens in the background:</p>
         <ol>
-            <li>"No &lt;!DOCTYPE html&gt;? Hmm.": The browser says, "Okay, I don't know what version of HTML this is. To be safe, I'll enter Quirks Mode." In quirks mode, the browser tries its best to render the page by mimicking the behavior of very old, non-standard browsers from the late 90s. For a simple <h1>, this usually looks fine, but for more complex layouts (especially with CSS), it can cause strange and unpredictable bugs.</li>
+            <li>"No &lt;!DOCTYPE html&gt;? Hmm.": The browser says, "Okay, I don't know what version of HTML this is. To be safe, I'll enter Quirks Mode." In quirks mode, the browser tries its best to render the page by mimicking the behavior of very old, non-standard browsers from the late 90s. For a simple &lt;h1&gt;, this usually looks fine, but for more complex layouts (especially with CSS), it can cause strange and unpredictable bugs.</li>
             <li>"No &lt;html&gt; or &lt;body&gt; tags? I'll just pretend they're there.": The browser's parser is smart. It sees content like &lt;h1&gt; that it knows belongs in the &lt;body&gt;. So, it says, "This developer probably forgot the &lt;html&gt;, &lt;head&gt;, and &lt;body&gt; tags. I will implicitly generate them in my internal model (the DOM) so I have somewhere to put this &lt;h1&gt;." You don't see these tags in your file, but the browser creates them in its memory to make sense of your document.</li>
             <li>"No &lt;meta charset="UTF-8"&gt;? I'll guess the encoding.": The browser will look at the first few bytes of your file and try to guess what character encoding you used. For simple English text, it will almost always guess correctly (e.g., ASCII or Windows-1252). The problem arises when you use special characters (€, —, ’). If the browser guesses wrong, those characters will break.</li>
             <li>"No &lt;title&gt;? Fine, I'll use the filename.": The browser needs something to put in the tab. So, it just uses the name of your HTML file (e.g., index.html) as the default title.</li>
@@ -259,6 +264,7 @@
         </ol>
         <p>Conclusion:</p>
         <p>You can build a shack with a few pieces of wood and no foundation, and it might stand up on a calm day. The boilerplate is the proper engineering foundation. It ensures your house (website) will stand up in any weather (any browser), is accessible to everyone (screen readers), is easy to find (SEO), and works on any size of land (any device)</p>
+        <h2><span style="color: darkblue;">Multipage Website</span></h2>
     </main>
 </body>
 </html>
