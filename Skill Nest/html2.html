@@ -161,6 +161,15 @@
         <h2><span style="color: darkblue;">HTML Boilerplate Code</span></h2>
         <h3>Step 1: The First Principle (The Fundamental Truth)</h3>
         <p>The fundamental truth is that a web browser is a program that needs specific, predictable instructions to do its job. It cannot guess your intentions. You can't just give it a file with a &lt;h1&gt; tag and expect it to know what kind of document it is, what language it's in, or how to render it properly.</p>
+        <h3>Step 2: The Core Problem</h3>
+        <p>We need a way to give the browser essential "setup information" before it starts rendering our visible content (like paragraphs and images). This setup information needs to answer critical questions:</p>
+        <ul>
+            <li>"What version of HTML am I reading?" (So I know which rules to follow).</li>
+            <li>"What character encoding should I use?" (So characters like ©, ’, or ₹ are displayed correctly and not as gibberish like â€™).</li>
+            <li>"What should the title of the browser tab be?"</li>
+            <li>"How should this page behave on a mobile device vs. a desktop?"</li>
+        </ul>
+        <p>Just writing &lt;p&gt; Hello &lt;p&gt; doesn't answer any of these questions.</p>
     </main>
 </body>
 </html>
