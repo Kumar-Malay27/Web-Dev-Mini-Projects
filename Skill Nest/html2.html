@@ -10,7 +10,7 @@
         <h1>File Path system</h1>
     </header>
     <main>
-        <h2>### Step 1: The First Principle (The Fundamental Truth)</h2>
+        <h2>Step 1: The First Principle (The Fundamental Truth)</h2>
         <p>The most fundamental truth is this: A website is not one single file.</p>
         <p>It's a collection of different files (HTML, CSS, JavaScript, images, videos, fonts) that all need to work together. These files are organized into folders, just like documents on your computer.</p>
 
@@ -22,6 +22,33 @@
         <h2>A) Relative File Paths (The Most Important for Your Projects)</h2>
         <p>A relative file path gives directions to a file starting from the location of the file you are currently in. You will use this 99% of the time for linking your own files together (images, CSS, other HTML pages).</p>
         <img src="a.jpg" alt="image">
+        <p>Here are the different scenarios:</p>
+        <h3>Scenario 1: Linking to a file in the SAME folder.</h3>
+        <ul>
+            <li>The Problem: You are in index.html and want to link to about.html.</li>
+            <li>The Logic: They are neighbors, living in the same my-website/ folder. The directions are as simple as possible.</li>
+            <li>The Syntax: You just use the filename.</li>
+        </ul>
+        <img src="b.jpg" alt="image">
+        <h3>Scenario 2: Linking to a file in a SUB-FOLDER (Going Down).</h3>
+        <ul>
+            <li>The Problem: You are in index.html and want to display logo.png.</li>
+            <li>The Logic: From index.html, you need to go into the images folder to find the logo.</li>
+            <li>The Syntax: You write the folder name, a forward slash /, and then the filename.codeHtml</li>
+        </ul>
+        <img src="c.jpg" alt="image">
+        <h3>Scenario 3: Linking to a file in a PARENT FOLDER (Going Up).</h3>
+        <ul>
+            <li>The Problem: You are in contact.html (which is inside pages/) and you want to display logo.png (which is inside images/).</li>
+            <li>The Logic: You can't go directly from pages/ to images/. You must first go up one level out of the pages folder to get back to the main my-website/ folder. From there, you can go down into the images folder.</li>
+            <li>The Syntax: Two dots and a slash (../) means "go up one level."codeHtml
+                <ul>
+                    <li>../ takes you from pages/ up to my-website/.</li>
+                    <li>images/logo.png then takes you down into the images folder to find the file.</li>
+                    <img src="d.jpg" alt="image">
+                </ul>
+            </li>
+        </ul>
     </main>
 </body>
 </html>
