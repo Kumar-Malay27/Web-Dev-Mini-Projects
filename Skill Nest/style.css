@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    color: wheat;
+}
+
+p{
+    color: gold;
+}
+li{
+    color: gold;
+}
+td{
+    color: rgb(142, 216, 68);
+}
+th{
+    color: rgb(190, 190, 188);
+}
