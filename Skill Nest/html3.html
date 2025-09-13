@@ -79,7 +79,49 @@
         <p>This introduces a new rule. How does the browser know which radio buttons belong to the same question?</p>
         <p>The Rule: All radio buttons in a single group must share the same name attribute. The name acts as the group identifier.</p>
         <p>Let's build a T-shirt size selector:</p>
-        <img src="" alt="">
+        <img src="q.jpg" alt="image">
+        <p>Let's break down the new attributes:</p>
+        <ul>
+            <li>type="radio": Creates the circular radio button.</li>
+            <li>name="shirtSize": This is the critical part. Because all three have the same name, the browser knows they are a single group and will only let you select one.</li>
+            <li>id="sizeS": Each input still needs a unique id so its specific label can connect to it.</li>
+            <li>value="small": This is the actual data that will be sent to the server if this option is selected. If the user clicks "Small", the form will send shirtSize=small. Without the value, the data would be meaningless.</li>
+        </ul>
+        <h2>The Need for "Select Many" - Checkboxes</h2>
+        <p>The Problem: Now, what if you want to ask a question where the user can choose multiple options? For example, "Which toppings would you like on your pizza?" A radio button won't work, because you can only select one.</p>
+        <p>The Solution: We need an input type that allows for multiple selections. This is the checkbox: &lt;input tye="checkbox"&gt;.</p>
+        <p>Checkboxes that are part of the same question should also share the same name. This tells the server that all the selected values belong to the same category ("toppings").</p>
+        <p>Let's build a toppings selector:</p>
+        <p>codeHtml</p>
+        <img src="r.jpg" alt="image">
+        <p>Breakdown:</p>
+        <ul>
+            <li>type="checkbox": Creates the square checkbox.</li>
+            <li>name="toppings": All three share this name, telling the server they are all "toppings".</li>
+            <li>id="toppingPep": Each has a unique id for its label.</li>
+            <li>value="pepperoni": Each has a unique value to identify which topping was chosen.</li>
+        </ul>
+        <p>Result: You now have three checkboxes, and you can click and select as many as you want.</p>
+        <h2>A Better Button - The &lt;button&gt; Element</h2>
+        <p>The Problem: Our &lt;input type="submit"&gt; works, but it's very limited. You can only put plain text in it using the value attribute. What if you want a button with an image, or with bold text?</p>
+        <p>The Solution: Use the &lt;button&gt; element. It's a container tag, meaning it has an opening and closing tag. This allows you to put other HTML elements inside it.</p>
+        <p>Let's replace our old submit button:</p>
+        <p>codeHtml</p>
+        <img src="s.jpg" alt="image">
+        <p>Breakdown:</p>
+        <ul>
+            <li>&lt;button&gt;: The container for the button.</li>
+            <li>type="submit": This is very important. This attribute tells the button to act as a form submit button. (It can also be type="button" for JavaScript or type="reset").</li>
+            <li>&lt;strong&gt;Submit&lt;/strong&gt;: We can now put other HTML tags, like &lt;strong&gt; or even an &lt;img&gt;, right inside our button!</li>
+        </ul>
+        <p>Result: A more flexible and powerful button that has the exact same submit functionality. From now on, we'll prefer &lt;button type="submit"&gt;.</p>
+        <h2>The Need for Long-Form Text - &lt;textarea&gt;</h2>
+        <p>The Problem: Our &lt;input type="text"&gt; is great for single lines of text like a name, but it's terrible for longer input, like a user comment or a shipping address. The text just scrolls sideways and becomes unreadable.</p>
+        <p>The Solution: We need a dedicated element for multi-line text input. This is the &lt;textarea&gt; tag.</p>
+        <p>Unlike &lt;input&gt;, &lt;textarea&gt; is a container tag (it has an opening and closing tag). It's also linked to a &lt;label&gt; the same for and id pattern.</p>
+        <p>Let's add a comments box:</p>
+        <p>codeHtml</p>
+        <img src="t.jpg" alt="image">
     </main>
 </body>
 </html>
