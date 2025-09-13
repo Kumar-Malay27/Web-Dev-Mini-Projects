@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>HTML MEDIA</h1>
+    </header>
+    <main>
+        <h2>First Principle: The Web is More Than Text and Images</h2>
+        <p>The fundamental truth is that a webpage should be able to deliver any kind of content, not just static text and pictures. For years, this was a major problem. To play a video or audio file, browsers had to rely on third-party plugins like Adobe Flash, QuickTime, or Silverlight. This was inefficient, insecure, and inconsistent across different computers.</p>
+        <h2>The Core Problem</h2>
+        <p>How can we embed video and audio into a webpage in a standardized, native, and plugin-free way? We need a universal system that works on every modern browser, from a desktop PC to a mobile phone, without requiring the user to install anything extra.</p>
+        <h2>The Logical Solution: The HTML5 &lt;video&gt; and &lt;audio&gt; Tags</h2>
+        <p>The solution was to create dedicated HTML tags whose sole purpose is to embed and control media.</p>
+        <h2>Part 1: The Basics - Getting a Video on the Page</h2>
+        <p>The star of the show is the &lt;video&gt; tag. At its simplest, it just needs to know the source of the video file.</p>
+        <p>code Html</p>
+        <p>downloadcontent_copy</p>
+        <p>expand_less</p>
+        <img src="a1.jpg" alt="image">
+        <p>The Problem We Immediately Face: If you put this on a page, you'll just see the first frame of the video as a static image. You can't play it, pause it, or change the volume. It's not a video player; it's just a video frame.</p>
+        <p>The Solution: We need to add player controls. The browser has a beautiful set of default controls built-in, and we can turn them on with a simple attribute.</p>
+        <h3>The controls Attribute: The Magic Switch</h3>
+        <p>The controls attribute is a boolean attribute. You don't need to set it to a value (controls="true" is unnecessary); its mere presence turns the feature on.</p>
+        <p>code Html</p>
+        <p>downloadcontent_copy</p>
+        <p>expand_less</p>
+        <p>IGNORE_WHEN_COPYING_START</p>
+        <p>IGNORE_WHEN_COPYING_END</p>
+        <img src="a2.jpg" alt="image">
+        <p>Result: You now have a fully functional video player on your page, complete with a play/pause button, a timeline scrubber, volume controls, and a fullscreen option. This is the simplest, most effective way to embed a video.</p>
+        <h2>Part 2: Intermediate - Gaining More Control with Attributes</h2>
+        <p>Now that we have a player, how do we control its behavior and appearance? We use attributes.</p>
+        <ul>
+            <li>
+                <p>width and height: Just like with an &lt;img&gt; tag, you can set the dimensions of the player. code Html</p>
+                <p>downloadcontent_copy</p>
+                <p>expand_less</p>
+                <p>IGNORE_WHEN_COPYING_START</p>
+                <p>IGNORE_WHEN_COPYING_END</p>
+                <img src="a3.jpg" alt="image">
+            </li>
+
+            <li>
+
+            </li>
+
+            <li>
+
+            </li>
+
+            <li>
+
+            </li>
+        </ul>
+    </main>
+</body>
+</html>
