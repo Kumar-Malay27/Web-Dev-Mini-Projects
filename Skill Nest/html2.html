@@ -318,9 +318,28 @@
             </li>
 
             <li><h2>The &lt;span&gt; (The Inline Highlighter)</h2>
-                
+                <h3>First Principle</h3>
+                <p>Sometimes we need to label and style a piece of content within a line of text, without creating a new block.</p>
+                <h3>The Core Problem</h3>
+                <p>What if you want to make just a single word inside a paragraph red?</p>
+                <p>&lt;p&gt;This is very important information.&lt;/p&gt;</p>
+                <p>You need to select the word "important". If you wrap it in a &lt;div&gt;, it will create a line break, ruining the sentence:</p>
+                <p>&lt;p&gt;This is very &lt;div&gt;important&lt;/div&gt; information.&lt;/p&gt; --&gt; Renders incorrectly.</p>
+                <h3>The Logical Solution: The Generic Inline Container</h3>
+                <p>We need a container that works just like a &lt;div&gt;, but is inline, meaning it does not create a line break. It just wraps a small piece of content within the natural flow of the text.</p>
+                <p>This is the &lt;div&gt;.</p>
+                <p>codeHtml</p>
+                <img src="k.jpg" alt="image">
+                <p>Now you can use CSS to target the .highlight class and make that one word red, without affecting the layout of the paragraph.</p>
+                <p>Analogy: A &lt;span&gt; is like using a highlighter pen. You can mark a few words in a book without having to rip out the page and put it in a separate box.</p>
+                <ul>
+                    <li>&lt;header&gt;: This is the box for the introductory content at the top of your page or a section. It typically contains your logo, site navigation (&lt;nav&gt;), and main heading.</li>
+                    <li>&lt;footer&gt;: The box for the closing content at the bottom. It usually contains copyright info, contact details, and secondary links.</li>
+                    <li>&lt;main&gt;: This is the most important one. It defines the main, unique content of that specific page. It should not contain things that are repeated on every page (like the header or footer). There should only be one &lt;main&gt; tag per page.</li>
+                </ul>
             </li>
         </ol>
+        <img src="" alt="">
     </main>
 </body>
 </html>
