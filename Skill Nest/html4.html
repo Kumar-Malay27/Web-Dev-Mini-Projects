@@ -16,6 +16,7 @@
         <p>How can we embed video and audio into a webpage in a standardized, native, and plugin-free way? We need a universal system that works on every modern browser, from a desktop PC to a mobile phone, without requiring the user to install anything extra.</p>
         <h2>The Logical Solution: The HTML5 &lt;video&gt; and &lt;audio&gt; Tags</h2>
         <p>The solution was to create dedicated HTML tags whose sole purpose is to embed and control media.</p>
+        <hr>
         <h2>Part 1: The Basics - Getting a Video on the Page</h2>
         <p>The star of the show is the &lt;video&gt; tag. At its simplest, it just needs to know the source of the video file.</p>
         <p>code Html</p>
@@ -33,6 +34,7 @@
         <p>IGNORE_WHEN_COPYING_END</p>
         <img src="a2.jpg" alt="image">
         <p>Result: You now have a fully functional video player on your page, complete with a play/pause button, a timeline scrubber, volume controls, and a fullscreen option. This is the simplest, most effective way to embed a video.</p>
+        <hr>
         <h2>Part 2: Intermediate - Gaining More Control with Attributes</h2>
         <p>Now that we have a player, how do we control its behavior and appearance? We use attributes.</p>
         <ul>
@@ -71,6 +73,7 @@
                 <img src="a5.jpg" alt="image">
             </li>
         </ul>
+        <hr>
         <h2>Part 3: The &lt;audio&gt; Tag</h2>
         <p>The good news is that the &lt;audio&gt; tag works almost identically to the &lt;video&gt; tag, just without the visual component.</p>
         <p>The Problem: How do we embed a sound file (like a song or a podcast) with player controls?</p>
@@ -82,8 +85,10 @@
         <p>IGNORE_WHEN_COPYING_END</p>
         <img src="a6.jpg" alt="image">
         <p>Result: A clean audio player with play/pause, a timeline, and volume controls. It uses the same attributes like autoplay, loop, and muted.</p>
+        <hr>
         <h2>Part 4: Advanced & Professional - Solving Real-World Problems</h2>
         <p>This is where we move from just making a player work to making it work for everyone, on every browser.</p>
+        <hr>
         <h2>Problem #1: Not all browsers support the same video formats.</h2>
         <p>Chrome might prefer the modern .webm format, while Safari on an iPhone might only support .mp4. If you only provide one src, some of your users won't be able to see your video.</p>
         <p>The Solution: The &lt;source&gt; Element</p>
@@ -119,6 +124,7 @@
             <li>label: The name that appears in the video player's captions menu.</li>
         </ul>
         <p>This makes your video accessible to a much wider audience and is a critical part of professional web development.</p>
+        <hr>
         <h2>Example 1: The Robust & Professional Method (&lt;source&gt;)</h2>
         <p>codeHtml</p>
         <img src="a9.jpg" alt="image">
@@ -152,6 +158,7 @@
             <li>Pros: The most reliable and professional way to embed video. It provides multiple formats to ensure your video will play for the largest possible audience across different browsers and devices.</li>
             <li>Cons: Requires you to have your video file encoded in multiple formats, which takes extra work.</li>
         </ul>
+        <hr>
         <h2>Example 2: The Simple & Direct Method (src attribute)</h2>
         <p>codeHtml</p>
         <img src="a10.jpg" alt="image">
@@ -171,6 +178,7 @@
             <li>Pros: Very simple to write and easy to read. You only need one video file.</li>
             <li>Cons: It's an "all or nothing" approach. If the user's browser doesn't support the .mp4 format for some reason, the video fails completely. There is no fallback option.</li>
         </ul>
+        <hr>
         <h2>Comparison Table</h2>
         <table border="1">
             <thead>
@@ -212,9 +220,10 @@
                 </tr>
             </tbody>
         </table>
-        <h2>Conclusion: Which One Should You Use?</h2>
+        <h3>Conclusion: Which One Should You Use?</h3>
         <p>For any serious, public website, you should always prefer the first method using the &lt;source&gt; element. It is the industry best practice.</p>
         <p>However, since .mp4 has become so universally supported in the last few years, many developers now take the shortcut and use the second, simpler method for convenience, especially for internal or less critical projects. But they are accepting the small risk that it might not work for every single user.</p>
+        <hr>
         <h2>The Two Ways to Create the Copyright Symbol ©</h2>
         <p>You can use either the entity name or the entity number. Both produce the exact same result. The entity name is generally easier to remember.</p>
         <ol>
@@ -226,6 +235,7 @@
                 <p>How it renders in the browser:</p>
                 <p>Copyright © 2024 My Awesome Website. All Rights Reserved.</p>
             </li>
+            <hr>
             <li>Using the Entity Number
                 <p>This method uses the character's numerical code. It works just as well but is less descriptive.</p>
                 <p>Code: &amp;#169;</p>
@@ -236,6 +246,7 @@
                 <p>Copyright © 2024 My Awesome Website. All Rights Reserved.</p>
             </li>
         </ol>
+        <hr>
         <h2>Other Common Symbol Entities You Should Know</h2>
         <p>The same principle applies to other common symbols.</p>
         <table border="1">
