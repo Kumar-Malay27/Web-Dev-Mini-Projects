@@ -9,6 +9,7 @@
     <header>
         <h1>File Path system</h1>
     </header>
+    <hr>
     <main>
         <h2>Step 1: The First Principle (The Fundamental Truth)</h2>
         <p>The most fundamental truth is this: A website is not one single file.</p>
@@ -19,6 +20,7 @@
         <p>You can't just say src="logo.png" and expect it to work every time. What if the logo is in an images folder? What if it's on a completely different website?</p>
         <p>The browser needs an exact, unambiguous address to locate the file. A file path is that address.</p>
         <br>
+        <hr>
         <h2>A) Relative File Paths (The Most Important for Your Projects)</h2>
         <p>A relative file path gives directions to a file starting from the location of the file you are currently in. You will use this 99% of the time for linking your own files together (images, CSS, other HTML pages).</p>
         <img src="a.jpg" alt="image">
@@ -50,6 +52,7 @@
             </li>
         </ul>
         <br>
+        <hr>
         <h2>B) Absolute File Paths</h2>
         <p>An absolute file path gives the full, complete URL to a resource on the web. It starts with http:// or https://.</p>
         <h3>When to use it:</h3>
@@ -93,7 +96,9 @@
                 </ul>
             </li>
         </ol>
+        <hr>
         <h3>Absolute Path in Windows</h3>
+        <hr>
         <p>The Windows file system is organized into separate drives, each identified by a letter (like C:, D:, etc.).</p>
         <ul>
             <li>Starting Point (The Root): An absolute path in Windows always starts with a drive letter followed by a colon and a backslash, like C:\. This is the "root" of that specific drive.</li>
@@ -115,6 +120,7 @@
         </ul>
         <hr>
         <h3>Absolute Path in macOS (and Linux)</h3>
+        <hr>
         <p>The macOS file system (like Linux and other Unix-like systems) does not use drive letters. Instead, it has a single, unified file system.</p>
         <ul>
             <li>Starting Point (The Root): An absolute path in macOS always starts with a single forward slash /. This symbol represents the one and only root of the entire file system.</li>
@@ -158,6 +164,7 @@
                 <td>/Users/johndoe/Documents/report.docx</td>
             </tr>
         </table>
+        <hr>
         <h2>HTML Boilerplate Code</h2>
         <h3>Step 1: The First Principle (The Fundamental Truth)</h3>
         <p>The fundamental truth is that a web browser is a program that needs specific, predictable instructions to do its job. It cannot guess your intentions. You can't just give it a file with a &lt;h1&gt; tag and expect it to know what kind of document it is, what language it's in, or how to render it properly.</p>
@@ -180,35 +187,41 @@
         <img src="g.jpg" alt="image">
         <p>Let's break down each line and explain why it's necessary.</p>
         <ol>
+            <hr>
             <li>&lt;!DOCTYPE html&gt;
+                <hr>
                 <ul>
                     <li>The Problem: In the past, there were many versions of HTML (HTML4, XHTML, etc.). The browser needed to know which set of rules to use to render the page.</li>
                     <li>The Solution: This is the very first line and it's called the Document Type Declaration. In modern HTML5, it's incredibly simple. This specific line tells the browser: "Use the latest, standard-compliant mode for rendering this HTML document." It's a switch that prevents the browser from falling back into "quirks mode" (an old mode for rendering non-standard pages). It must always be the first thing in your file.</li>
                 </ul>
             </li>
-
+            <hr>
             <li>&lt;html lang="en"&gt;...&lt;/html&gt;
+                <hr>
                 <ul>
                     <li>The Problem: The web is global. How do search engines (like Google) and screen readers (for accessibility) know what human language the content is written in?</li>
                     <li>The Solution: This is the root element that wraps your entire page. The lang="en" attribute declares that the primary language of the page content is English. This is very important for accessibility and SEO. You'd change "en" to "es" for Spanish, "hi" for Hindi, etc.</li>
                 </ul>
             </li>
-
+            <hr>
             <li>&lt;head&gt;...&lt;/head&gt;
+                <hr>
                 <ul>
                     <li>The Problem: As discussed, we need a place to put all the "behind-the-scenes" information that is for the browser, not for the user to see on the page.</li>
                     <li>The Solution: The &lt;head&gt; section is the container for this metadata. Nothing you put inside the &lt;head&gt; will be displayed in the main browser window.</li>
                 </ul>
             </li>
-
+            <hr>
             <li>&lt;meta charset="UTF-8"&gt;
+                <hr>
                 <ul>
                     <li>The Problem: Computers fundamentally only understand numbers. To display text, they use a "character set" to map numbers to letters. There are many different character sets, and if the browser uses the wrong one, your text will be garbled.</li>
                     <li>The Solution: This meta tag explicitly tells the browser to use UTF-8, which is the universal standard character set for the web. It can represent almost any character and symbol from any language in the world. This line is essential to prevent text-encoding issues.</li>
                 </ul>
             </li>
-
+            <hr>
             <li>&lt;meta name="viewport"...&gt;
+                <hr>
                 <ul>
                     <li>The Problem: A website can be viewed on a tiny phone screen or a giant desktop monitor. If you don't tell a mobile browser how to handle your page, it will try to render it as if it were on a desktop—resulting in a tiny, zoomed-out, unreadable page.</li>
                     <li>The Solution: This specific meta tag is the cornerstone of responsive design.
@@ -220,15 +233,17 @@
                     </li>
                 </ul>
             </li>
-
+            <hr>
             <li>&lt;title&gt;...&lt;/title&gt;
+                <hr>
                 <ul>
                     <li>The Problem: A user might have 20 tabs open. How do they identify your page? What name should appear when they bookmark your page?</li>
                     <li>The Solution: The &lt;title&gt; tag sets the text that appears in the browser tab, in bookmark lists, and in search engine results. It's a critical piece of metadata for both usability and SEO.</li>
                 </ul>
             </li>
-
+            <hr>
             <li>&lt;body&gt;...&lt;/body&gt;
+                <hr>
                 <ul>
                     <li>The Problem: Where do we put the actual visible content?</li>
                     <li>The Solution: The &lt;body&gt; section is the container for everything the user will actually see on the page: your headings, paragraphs, images, links, tables, etc. All the tags you've learned so far go inside the &lt;body&gt;.</li>
@@ -236,7 +251,9 @@
             </li>
         </ol>
         <p>Conclusion: The HTML boilerplate isn't just a random collection of tags. Each line serves a critical, logical purpose to ensure your webpage is rendered correctly, is accessible, is mobile-friendly, and is understood by search engines. It is the non-negotiable starting point for every web page you will ever create.</p>
-        <h3><span style="color: crimson;">But website work even without Boilerplate</span></h3>
+        <hr>
+        <h3>But website work even without Boilerplate</h3>
+        <hr>
         <h4>Browsers are Built to Be Extremely Forgiving.</h4>
         <p>Think about the early days of the web. It was a chaotic "Wild West." People wrote messy, incorrect, and incomplete HTML all the time. If browsers had been strict—if they had crashed or refused to render a page because of a missing tag—the web would have never taken off.</p>
         <p>So, browser makers (like Netscape and Microsoft) made a crucial design decision: "When in doubt, guess."</p>
@@ -248,6 +265,7 @@
             <li>"No &lt;meta charset="UTF-8"&gt;? I'll guess the encoding.": The browser will look at the first few bytes of your file and try to guess what character encoding you used. For simple English text, it will almost always guess correctly (e.g., ASCII or Windows-1252). The problem arises when you use special characters (€, —, ’). If the browser guesses wrong, those characters will break.</li>
             <li>"No &lt;title&gt;? Fine, I'll use the filename.": The browser needs something to put in the tab. So, it just uses the name of your HTML file (e.g., index.html) as the default title.</li>
         </ol>
+        <hr>
         <h4>So, Why Use a Boilerplate if the Browser Fixes Everything?</h4>
         <p>You're right that for a simple "Hello World" page, it looks the same. But the boilerplate isn't about making a simple page look right; it's about making a professional, reliable, and future-proof website.</p>
         <p>Here is why you're playing with fire by omitting it:</p>
@@ -259,6 +277,7 @@
         </ol>
         <p>Conclusion:</p>
         <p>You can build a shack with a few pieces of wood and no foundation, and it might stand up on a calm day. The boilerplate is the proper engineering foundation. It ensures your house (website) will stand up in any weather (any browser), is accessible to everyone (screen readers), is easy to find (SEO), and works on any size of land (any device)</p>
+        <hr>
         <h2>Multipage Website</h2>
         <p>The fundamental truth is that complex information is almost never presented on a single, infinitely long page. We naturally break information into distinct, self-contained topics. A book has chapters, a store has departments, and a company has different aspects (About, Services, Contact).</p>
         <p>A multi-page website is the digital equivalent of this.</p>
@@ -289,7 +308,7 @@
                 <img src="i.jpg" alt="image">
                 <p>Now, using CSS, we can say "put a border on that &lt;div&gt;" and it will wrap around the entire group.</p>
             </li>
-
+            <hr>
             <li><h2>class and id (The Labels for the Box)</h2>
                 <h3>First Principle</h3>
                 <p>Once we have boxes (&lt;div&gt;s), we need a way to identify and find them.</p>
@@ -316,7 +335,7 @@
                     <li>#featured-profile { ... } (Targets only the one special card to give it a gold border)</li>
                 </ul>
             </li>
-
+            <hr>
             <li><h2>The &lt;span&gt; (The Inline Highlighter)</h2>
                 <h3>First Principle</h3>
                 <p>Sometimes we need to label and style a piece of content within a line of text, without creating a new block.</p>
