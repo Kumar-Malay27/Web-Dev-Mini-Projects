@@ -1,0 +1,19 @@
+body{
+    background-color: lightblue;
+}
+
+#container{
+    background-color: red;
+    height: 300px;
+    width: 500px;
+    position: relative;
+}
+
+#box{
+    background-color: purple;
+    height: 100px;
+    width: 500px;
+    position: absolute;
+    top: 100px;
+}
+
