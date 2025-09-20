@@ -17,3 +17,12 @@ body{
     top: 100px;
 }
 
+#circle{
+    background-color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    left: 210px;
+    top: 10px;
+}
