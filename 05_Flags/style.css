@@ -6,3 +6,9 @@ body{
     width: 500px;
     background-color: white;
 }
+
+#circle{
+    height: 150px;
+    width: 150px;
+    background-color: red;
+}
