@@ -16,14 +16,20 @@ body{
     max-width: 1200px;
     grid-template-columns: 350px 1fr;
     gap: 50px;
+    padding-top: 40px;
+    margin: auto;
 }
 
 .siderbar{
     background-color: #2a2a2a;
     height: 90vh;
+    border: solid 2px #3a3a3a;
+    border-radius: 16px;
 }
 
 .main-content{
     background-color: #2a2a2a;
     height: 90vh;
+    border: solid 2px #3a3a3a;
+    border-radius: 16px;
 }
