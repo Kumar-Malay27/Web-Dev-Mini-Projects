@@ -15,7 +15,7 @@ body{
     display: grid;
     max-width: 1200px;
     grid-template-columns: 350px 1fr;
-    gap: 40px;
+    gap: 50px;
 }
 
 .siderbar{
