@@ -40,3 +40,14 @@ body{
     border-radius: 50%;
     border: solid 1px #3a3a3a;
 }
+
+.profile p{
+    background-color: #1e1e1e;
+    padding: 5px 15px;
+    color: #FFBF00;
+    border: 1px solid #3a3a3a;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 10px;
+}
