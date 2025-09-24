@@ -25,6 +25,7 @@ body{
     height: 90vh;
     border: solid 2px #3a3a3a;
     border-radius: 16px;
+    padding: 40px;
 }
 
 .main-content{
@@ -32,6 +33,10 @@ body{
     height: 90vh;
     border: solid 2px #3a3a3a;
     border-radius: 16px;
+}
+
+.profile{
+    text-align: center;
 }
 
 .profile img{
@@ -42,9 +47,9 @@ body{
 }
 
 .profile h2{
+    font-size: 1.5rem;
     font-weight: 700;
     margin-top: 20px;
-    font-size: 1.5rem;
     color: #e0e0e0;
 }
 
