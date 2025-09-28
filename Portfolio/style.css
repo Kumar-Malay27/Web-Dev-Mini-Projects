@@ -130,3 +130,7 @@ nav a{
     color: #a0a0a0;
     font-weight: 500;
 }
+
+.active{
+    color: #FFBF00;
+}
