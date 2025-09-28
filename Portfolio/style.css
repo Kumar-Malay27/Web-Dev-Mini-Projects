@@ -104,5 +104,9 @@ body{
     height: 24px;
     margin: 5px;
     filter: brightness(0) saturate(100%) invert(65%) sepia(3%) saturate(1844%) hue-rotate(326deg) brightness(101%) contrast(85%);
-    
+    transition: all 0.3s ease;
+}
+
+.social img:hover{
+    filter: brightness(0) saturate(0%) invert(0%) sepia(0%) saturate() hue-rotate() brightness() contrast();
 }
