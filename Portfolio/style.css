@@ -116,7 +116,9 @@ body{
 
 /* navigation */
 #navigation{
-    padding: 30px 20px;
+    border-bottom: 2px solid #3a3a3a;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 nav{
@@ -130,11 +132,16 @@ nav a{
     color: #a0a0a0;
     font-weight: 500;
     transition: color 0.3s ease;
-    border-bottom: 2px solid #3a3a3a;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
 }
 
 .active, nav a:hover{
     color: #FFBF00;
+}
+
+/* about section css */
+
+.heading{
+    font-size: 2rem;
+    color: #e0e0e0;
+    margin-bottom: 15px;
 }
