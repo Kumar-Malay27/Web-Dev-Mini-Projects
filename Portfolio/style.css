@@ -154,3 +154,8 @@ nav a{
     margin-bottom: 15px;
     border-radius: 2px;
 }
+
+.content{
+    text-align: justify;
+    color: #a0a0a0;
+}
