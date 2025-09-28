@@ -169,7 +169,7 @@ nav a{
 .grid-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 40px;
+    gap: 35px;
 }
 
 .grid-item{
@@ -197,4 +197,10 @@ nav a{
 .grid-item:hover{
     transform: scale(1.1);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* education css */
+
+#education{
+    margin-top: 35px;
 }
