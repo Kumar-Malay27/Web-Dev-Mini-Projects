@@ -104,4 +104,5 @@ body{
     height: 24px;
     margin: 5px;
     filter: brightness(0) saturate(100%) invert(65%) sepia(3%) saturate(1844%) hue-rotate(326deg) brightness(101%) contrast(85%);
+    
 }
