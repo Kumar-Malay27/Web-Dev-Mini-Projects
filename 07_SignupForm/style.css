@@ -17,6 +17,7 @@ body{
     background-color: aliceblue;
     padding: 60px;
     border-radius: 10px;
+    position: relative;
 }
 
 h1{
@@ -42,4 +43,36 @@ input{
 
 button{
     cursor: pointer;
+}
+
+#img1{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    left: 23px;
+    bottom: 317px;
+}
+
+#img2{
+    height: 27px;
+    width: 27px;
+    position: absolute;
+    left: 23px;
+    bottom: 254px;
+}
+
+#img3{
+    height: 27px;
+    width: 27px;
+    position: absolute;
+    left: 23px;
+    bottom: 190px;
+}
+
+#img4{
+    height: 27px;
+    width: 27px;
+    position: absolute;
+    left: 23px;
+    bottom: 126px;
 }
