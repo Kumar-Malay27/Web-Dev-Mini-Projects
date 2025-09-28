@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sun{
+    height: 150px;
+    width: 150px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 30px 15px yellow;
+}
+
+.circle1{
+    height: 300px;
+    width: 300px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: rotate 5s linear infinite;
+}
+
+.circle2{
+    height: 450px;
+    width: 450px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: rotate 10s linear infinite;
+}
+
+.circle3{
+    height: 600px;
+    width: 600px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: rotate 15s linear infinite;
+}
+
+.circle4{
+    height: 750px;
+    width: 750px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: rotate 20s linear infinite;
+}
+
+.circle5{
+    height: 900px;
+    width: 900px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: rotate 25s linear infinite;
+}
+
+.circle6{
+    height: 1050px;
+    width: 1050px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: rotate 30s linear infinite;
+}
+
+.circle7{
+    height: 1200px;
+    width: 1200px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: rotate 35s linear infinite;
+}
+
+.circle8{
+    height: 1350px;
+    width: 1350px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: rotate 40s linear infinite;
+}
+
+.circle9{
+    height: 1500px;
+    width: 1500px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: rotate 45s linear infinite;
+}
+
+.mercury{
+    height: 20px;
+    width: 20px;
+    background-color: grey;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 10px 5px grey;
+}
+
+.venus{
+    height: 30px;
+    width: 30px;
+    background-color: #e6e2af;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 10px 5px #e6e2af;
+}
+
+.earth{
+    height: 35px;
+    width: 35px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 10px 5px blue;
+}
+
+.mars{
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 10px 5px red;
+}
+
+.jupiter{
+    height: 70px;
+    width: 70px;
+    background-color: #f4a460;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 10px 5px #f4a460;
+}
+
+.saturn{
+    height: 60px;
+    width: 60px;
+    background-color: #daa520;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 10px 5px #daa520;
+}
+
+.uranus{
+    height: 50px;
+    width: 50px;
+    background-color: #afeeee;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 10px 5px #afeeee;
+}
+
+.neptune{
+    height: 50px;
+    width: 50px;
+    background-color: #4169e1;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 10px 5px #4169e1;
+}
+
+.pluto{
+    height: 15px;
+    width: 15px;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 10px 5px #d3d3d3;
+}
+
+@keyframes rotate{
+    from{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    to{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
