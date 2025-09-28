@@ -164,3 +164,9 @@ nav a{
     margin-bottom: 35px;
 }
 
+/* skills css */
+
+.grid-container{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
