@@ -167,6 +167,18 @@ nav a{
 /* skills css */
 
 .grid-container{
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 40px;
+}
+
+.grid-item{
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #3a3a3a;
+}
+
+.grid-item img{
+    height: 48px;
+    width: 48px;
 }
