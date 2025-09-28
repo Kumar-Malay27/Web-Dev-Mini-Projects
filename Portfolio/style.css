@@ -176,9 +176,20 @@ nav a{
     text-align: center;
     padding: 20px;
     border: 2px solid #3a3a3a;
+    background-color: #1e1e1e;
+    margin-top: 20px;
+    border-radius: 16px;
+    transition: transform 0.3s ease;
 }
 
 .grid-item img{
     height: 48px;
     width: 48px;
+    margin-bottom: 15px;
+    filter: brightness(0) saturate(100%) invert(76%) sepia(96%) saturate(638%) hue-rotate(10deg) brightness(106%) contrast(96%);
+}
+
+.grid-item h2{
+    font-size: 1rem;
+    font-weight: 500;
 }
