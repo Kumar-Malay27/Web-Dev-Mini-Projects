@@ -129,8 +129,12 @@ nav a{
     text-decoration: none;
     color: #a0a0a0;
     font-weight: 500;
+    transition: color 0.3s ease;
+    border-bottom: 2px solid #3a3a3a;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
-.active{
+.active, nav a:hover{
     color: #FFBF00;
 }
