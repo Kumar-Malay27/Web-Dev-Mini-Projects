@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-size: 40px;
+}
+
+.container{
+    display: grid;
+    height: 800px;
+    width: 800px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.Box{
+     background-color: rgb(0, 230, 11);
+}
+
+#Box1{
+    grid-column:  / ;
+    grid-row:  / ;
+}
+#Box2{
+    grid-column:  / ;
+    grid-row:  / ;
+}
+#Box3{
+    grid-column:  / ;
+    grid-row:  / ;
+}
+#Box4{
+    grid-column:  / ;
+    grid-row:  / ;
+}
+#Box5{
+    grid-column:  / ;
+    grid-row:  / ;
+}
+#Box6{
+    grid-column:  / ;
+    grid-row:  / ;
+}
+#Box7{
+    grid-column:  / ;
+    grid-row:  / ;
+}
+#Box8{
+    grid-column:  / ;
+    grid-row:  / ;
+}
+#Box9{
+    grid-column:  / ;
+    grid-row:  / ;
+}
